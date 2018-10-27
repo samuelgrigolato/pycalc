@@ -1,6 +1,8 @@
+try:
+    a = int(input())
+    b = int(input())
 
-a = int(input())
-b = int(input())
-
-print(a + b)
+    print(a + b)
+except ValueError:
+    print("Type only numbers!!!!!!!")
 
