@@ -1,10 +1,8 @@
 def menu():
+    operations = ["Exit", "Sum", "Subtraction", "Multiplication", "Division"]
     print("### Menu ###")
-    print("[0] - Exit")
-    print("[1] - Sum")
-    print("[2] - Subtraction")
-    print("[3] - Multiplication")
-    print("[4] - Division")
+    for operation in operations:
+        print(f"[{ operations.index(operation) }] - { operation }")
 
 def calc():
     a = int(input("Value 1: "))
