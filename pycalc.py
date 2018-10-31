@@ -1,8 +1,7 @@
 def menu():
-    operations = ["Exit", "Sum", "Subtraction", "Multiplication", "Division"]
     print("### Menu ###")
-    for operation in operations:
-        print(f"[{ operations.index(operation) }] - { operation }")
+    for idx, operation in enumerate(["Exit", "Sum", "Subtraction", "Multiplication", "Division"]):
+        print(f"[{ idx }] - { operation }")
 
 def calc():
     a = int(input("Value 1: "))
